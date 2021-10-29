@@ -1,0 +1,8 @@
+fun fizzbuzz(x,y) = if x > y then nil
+else if x mod 3 = 0 andalso x mod 5 = 0 then (x, "fizz buzz") :: fizzbuzz(x+1, y)
+else if x mod 3 = 0 then (x, "fizz") :: fizzbuzz(x+1, y)
+else if x mod 5 = 0 then (x, "buzz") :: fizzbuzz(x+1, y)
+else fizzbuzz(x+1, y);
+    
+    
+fizzbuzz(1, 30);
